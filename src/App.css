@@ -1,38 +1,79 @@
-.App {
+/* Fondo general oscuro */
+.pantalla-oscura {
+  background-color: #1a1e23;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenedor-perfil {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Foto tamaño mediano/pequeño como en la imagen */
+.foto-perfil-simple {
+  width: 220px; 
+  height: auto;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.evaluacion-texto {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.alumno-texto {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Enlaces estilo simple */
+.enlaces-inferiores a, .boton-enlace {
+  display: block;
+  color: #4da6ff;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 0;
+}
+
+/* Estilos del Centro de Descargas */
+.centro-descargas-directo {
+  width: 90%;
+  max-width: 500px;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4da6ff;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.btn-azul { background-color: #007bff; }
+.btn-verde { background-color: #28a745; }
+.btn-gris { background-color: #343a40; }
